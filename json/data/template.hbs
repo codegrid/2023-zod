@@ -1,0 +1,10 @@
+[
+  {{#repeat 5}}
+  {
+    "src": "https://{{domain}}/{{username}}.{{random 'png' 'jpg'}}",
+    "alt": "{{firstName}} {{lastName}}",
+    "width": {{int 100 500 round=10}},
+    "height": {{int 100 500 round=10}}
+  }
+  {{/repeat}}
+]

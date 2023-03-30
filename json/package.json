@@ -1,0 +1,18 @@
+{
+  "name": "zod-example-json",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "dummyjson data/template.hbs > data/random.json",
+    "exec:parse": "ts-node --esm src/parse.ts",
+    "exec:trim-example": "ts-node --esm src/trim-example.ts",
+    "exec:parse-invalid": "ts-node --esm src/invalid-parse.ts"
+  },
+  "devDependencies": {
+    "dummy-json": "^3.0.5",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "zod": "^3.21.4"
+  }
+}
