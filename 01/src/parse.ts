@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import * as json from '../data/images.json' assert { type: 'json' }
+import images from '../data/images.json' assert { type: 'json' }
 
 /* Zod schema --------------------------------- */
 
@@ -14,14 +14,6 @@ const zImage = z.object({
   height: zSize,
 })
 const zImages = zImage.array()
-
-/* TypeScript type ---------------------------- */
-
-type Images = z.infer<typeof zImages>
-
-/* data --------------------------------------- */
-
-const images: Images = JSON.parse(JSON.stringify(json)).default
 
 /* parse -------------------------------------- */
 
