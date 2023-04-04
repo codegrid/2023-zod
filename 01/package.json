@@ -3,7 +3,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "generate": "dummyjson data/template.hbs > data/random.json",
     "exec:parse": "ts-node --esm src/parse.ts",
     "exec:trim-example": "ts-node --esm src/trim-example.ts",
     "exec:error-format": "ts-node --esm src/error-format.ts",
@@ -12,7 +11,6 @@
     "exec:error-issues-parse": "ts-node --esm src/error-issues-parse.ts"
   },
   "devDependencies": {
-    "dummy-json": "^3.0.5",
     "ts-node": "^10.9.1"
   },
   "dependencies": {
