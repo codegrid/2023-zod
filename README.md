@@ -1,6 +1,6 @@
-## 型の検証修正ライブラリ、Zodを使う サンプルコード
+## データ形式の検証ライブラリ、Zodを使う サンプルコード
 
-CodeGrid 連載、[型の検証修正ライブラリ、Zodを使う](https://www.codegrid.net/series/2023-zod)シリーズのサンプルコードです。
+CodeGrid 連載、[データ形式の検証ライブラリ、Zodを使う](https://www.codegrid.net/series/2023-zod)シリーズのサンプルコードです。
 
 記事ごとにディレクトリが分かれています。
 
