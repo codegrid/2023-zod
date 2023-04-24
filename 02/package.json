@@ -1,0 +1,15 @@
+{
+  "name": "zod-example-02",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "exec:horizontal-image": "ts-node --esm src/horizontal-image.ts",
+    "exec:refine-dynamic-message": "ts-node --esm src/refine-dynamic-message.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "zod": "^3.21.4"
+  }
+}
