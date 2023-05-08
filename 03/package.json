@@ -1,0 +1,20 @@
+{
+  "name": "zod-example-03",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "exec:union-error-issues": "ts-node --esm src/union-error-issues.ts",
+    "exec:union-error-format": "ts-node --esm src/union-error-format.ts",
+    "exec:union-error-flatten": "ts-node --esm src/union-error-flatten.ts",
+    "exec:union-error-map": "ts-node --esm src/union-error-map.ts",
+    "exec:discriminated-union-error-issues": "ts-node --esm src/discriminated-union-error-issues.ts",
+    "exec:same-type-patterns-union": "ts-node --esm src/same-type-patterns-union.ts",
+    "exec:same-type-patterns-refine": "ts-node --esm src/same-type-patterns-refine.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "zod": "^3.21.4"
+  }
+}
