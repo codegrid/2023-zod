@@ -1,0 +1,22 @@
+{
+  "name": "zod-example-03",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "exec:transform": "ts-node --esm src/transform.ts",
+    "exec:transform-pipe": "ts-node --esm src/transform-pipe.ts",
+    "exec:transform-refine": "ts-node --esm src/transform-refine.ts",
+    "exec:coerce-number": "ts-node --esm src/coerce-number.ts",
+    "exec:coerce-string": "ts-node --esm src/coerce-string.ts",
+    "exec:coerce-boolean": "ts-node --esm src/coerce-boolean.ts",
+    "exec:coerce-date": "ts-node --esm src/coerce-date.ts",
+    "exec:tree": "ts-node --esm src/tree.ts",
+    "exec:tree-effect": "ts-node --esm src/tree-effect.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "zod": "^3.21.4"
+  }
+}
