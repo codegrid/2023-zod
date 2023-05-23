@@ -11,7 +11,8 @@
     "exec:coerce-boolean": "ts-node --esm src/coerce-boolean.ts",
     "exec:coerce-date": "ts-node --esm src/coerce-date.ts",
     "exec:tree": "ts-node --esm src/tree.ts",
-    "exec:tree-effect": "ts-node --esm src/tree-effect.ts"
+    "exec:tree-effect": "ts-node --esm src/tree-effect.ts",
+    "exec:use-validator": "ts-node --esm src/use-validator.ts"
   },
   "devDependencies": {
     "ts-node": "^10.9.1"
