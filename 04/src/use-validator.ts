@@ -2,11 +2,12 @@ import { z } from 'zod'
 
 // Zodスキーマによる検証を行い、その検証結果を管理するクラス
 class Validator<T extends z.ZodTypeAny> {
-  zSchema: T
+  zSchema: T // Zodスキーマならなんでも受け取れる
   data: z.output<T> | null = null
   errors: Set<string> = new Set<string>()
   invalid: boolean = false
 
+  // Tは引数として渡されたZodスキーマの型に確定する
   constructor(schema: T) {
     this.zSchema = schema
   }
@@ -62,9 +63,12 @@ export const zJoined = z.coerce
 
 /* validate ----------------------------------- */
 
+// ここで、Validatorクラス内で使われるT型はzJoinedスキーマの型に確定する
 const joined = new Validator(zJoined)
 
+// 検証結果の分岐処理を毎回書くことなく、何度でも手軽に検証できる
 joined.validate('')
+// joined.dataはちゃんとz.output<typeof zJoined>型になっている
 console.log(joined.data, joined.invalid, joined.errors)
 
 joined.validate('2022-11-01')
